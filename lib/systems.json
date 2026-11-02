@@ -186,14 +186,38 @@
     "license_level": 1,
     "type": "Deployable",
     "sp": 2,
-    "heat_cost": 1,
     "tags": [
       {
         "id": "tg_limited",
         "val": 1
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_mine"
       }
     ],
-    "description": "Implanta 4 minas térmicas visíveis (Mine, Blast 1) em espaços desocupados a até Range 5. Quando um inimigo entra na área, a mina detona causando 1d3 Dano Explosivo e 2 de Burn."
+    "actions": [
+      {
+        "name": "Deploy Thermite Mines",
+        "activation": "Quick",
+        "detail": "Implanta até 4 minas térmicas visíveis em espaços desocupados a até Range 5."
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Thermite Mine",
+        "type": "Mine",
+        "size": 0.5,
+        "hp": 5,
+        "evasion": 5,
+        "edef": 5,
+        "detail": "Cada mina é um objeto targetável. Quando um inimigo entra no espaço ocupado por uma mina ou passa adjacente a ela, a mina detona (Blast 1), causando 1d3 Dano Explosivo e 2 de Burn a todos os alvos afetados."
+      }
+    ],
+    "description": "Implanta 4 minas térmicas visíveis (Mine, Blast 1) em espaços desocupados a até Range 5. Cada mina possui 5 HP e 5 Evasion e pode ser destruída antes de detonar. Quando um inimigo entra na área, a mina detona causando 1d3 Dano Explosivo e 2 de Burn."
   },
   {
     "id": "ms_nis_grappling_sub_arms",
@@ -203,7 +227,19 @@
     "license_level": 2,
     "type": "Tech",
     "sp": 2,
-    "heat_cost": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Grappling Sub-Arms",
+        "activation": "Quick Tech",
+        "detail": "Projeta garras de contenção contra um personagem (Size 1 ou menor) a até Range 3."
+      }
+    ],
     "description": "Projeta garras de contenção contra um personagem (Size 1 ou menor) a até Range 3. O alvo deve fazer um Hull Save (inimigo) ou concordar (aliado). Em caso de falha/concordância, o Icarus entra em Grapple e ganha FLYING para mover até metade da Speed. No fim do movimento, solta o alvo: inimigos sofrem dano de queda e ficam Prone; aliados são depositados com segurança."
   },
   {
@@ -214,7 +250,19 @@
     "license_level": 3,
     "type": "Tech",
     "sp": 3,
-    "heat_cost": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Atmospheric Dissipator",
+        "activation": "Full Tech",
+        "detail": "Força a exaustão de ar superaquecido dos reatores em uma zona de Burst 2."
+      }
+    ],
     "description": "Full Action. Força a exaustão de ar superaquecido dos reatores. Todos os inimigos em Burst 2 (centrados no Icarus) devem fazer um Systems Save. Em caso de falha, ficam Impaired e sofrem Lock On."
   }
 ]
