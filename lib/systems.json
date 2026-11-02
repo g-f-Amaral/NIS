@@ -227,12 +227,7 @@
     "license_level": 2,
     "type": "Tech",
     "sp": 2,
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
+    "tags": [],
     "actions": [
       {
         "name": "Grappling Sub-Arms",
@@ -250,12 +245,7 @@
     "license_level": 3,
     "type": "Tech",
     "sp": 3,
-    "tags": [
-      {
-        "id": "tg_heat_self",
-        "val": 2
-      }
-    ],
+    "tags": [],
     "actions": [
       {
         "name": "Atmospheric Dissipator",
