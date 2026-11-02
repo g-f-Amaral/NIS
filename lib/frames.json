@@ -269,7 +269,7 @@
       "activation": "Protocol",
       "use": "Mission"
     },
-    "image_url": "https://images4.imgbox.com/d8/bf/ScFfSb5L_o.png",
+    "image_url": "https://raw.githubusercontent.com/g-f-Amaral/NIS/refs/heads/master/images/icarus_frame.png",
     "license": "Icarus",
     "license_id":"mf_nis_icarus"
   }
