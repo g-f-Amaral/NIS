@@ -11,7 +11,7 @@
     "description": "<p>Primeiro chassi de combate da Numen, a Nemesis foi desenhada em torno de uma ideia simples: o piloto não comanda a máquina, ele a veste. Um sistema nervoso sintético corre ao longo da espinha e do córtex de quem a pilota, e cada reflexo vira movimento antes mesmo de ser pensado.</p><p>Leve, rápida e quase sem blindagem, a Nemesis vive de iniciativa. Quem a pilota aprende cedo que parar é morrer, e que a lança só é perigosa quando o impulso já está em curso.</p>",
     "mounts": [
       "Main/Aux",
-      "Flex"
+      "Main"
     ],
     "stats": {
       "size": 1,
@@ -139,13 +139,13 @@
     "description": "<p>Projetado para absorção extrema de estresse e proteção somática, o Thanatos estende o link neural além de sua própria estrutura para amortecer o impacto recebido por chassis aliados.</p>",
     "mounts": [
       "Main",
-      "Flex"
+      "Heavy"
     ],
     "integrated": [
       "ms_nis_resonance_shield"
     ],
     "stats": {
-      "size": 1,
+      "size": 2,
       "structure": 4,
       "stress": 4,
       "armor": 1,
