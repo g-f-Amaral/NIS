@@ -1,9 +1,9 @@
 {
   "name": "Numem Integrated Systems",
   "author": "Amaral",
-  "description": "",
+  "description": "Pacote de conteúdo homebrew da fabricante Numen Integrated Systems para Lancer RPG.",
   "item_prefix": "NIS-A",
-  "version": "1.5",
-  "image_url": "",
+  "version": "1.5.6",
+  "image_url": "https://raw.githubusercontent.com/g-f-Amaral/NIS/cd08e8911798a3f01a9b035bea9306dc54d71882/images/nis-logo_vazado_ver.svg",
   "website": ""
 }
