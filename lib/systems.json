@@ -177,5 +177,44 @@
       }
     ],
     "description": "Libera a dor acumulada e o feedback sensorial do piloto em uma onda de choque dissonante que paralisa os sensores inimigos."
+  },
+  {
+    "id": "ms_nis_thermite_mine",
+    "name": "Thermite Mine",
+    "source": "NIS",
+    "license": "Icarus",
+    "license_level": 1,
+    "type": "Deployable",
+    "sp": 2,
+    "heat_cost": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "description": "Implanta 4 minas térmicas visíveis (Mine, Blast 1) em espaços desocupados a até Range 5. Quando um inimigo entra na área, a mina detona causando 1d3 Dano Explosivo e 2 de Burn."
+  },
+  {
+    "id": "ms_nis_grappling_sub_arms",
+    "name": "Grappling Sub-Arms",
+    "source": "NIS",
+    "license": "Icarus",
+    "license_level": 2,
+    "type": "Tech",
+    "sp": 2,
+    "heat_cost": 2,
+    "description": "Projeta garras de contenção contra um personagem (Size 1 ou menor) a até Range 3. O alvo deve fazer um Hull Save (inimigo) ou concordar (aliado). Em caso de falha/concordância, o Icarus entra em Grapple e ganha FLYING para mover até metade da Speed. No fim do movimento, solta o alvo: inimigos sofrem dano de queda e ficam Prone; aliados são depositados com segurança."
+  },
+  {
+    "id": "ms_nis_atmospheric_dissipator",
+    "name": "Atmospheric Dissipator",
+    "source": "NIS",
+    "license": "Icarus",
+    "license_level": 3,
+    "type": "Tech",
+    "sp": 3,
+    "heat_cost": 2,
+    "description": "Full Action. Força a exaustão de ar superaquecido dos reatores. Todos os inimigos em Burst 2 (centrados no Icarus) devem fazer um Systems Save. Em caso de falha, ficam Impaired e sofrem Lock On."
   }
 ]

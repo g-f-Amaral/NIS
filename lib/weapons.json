@@ -249,5 +249,53 @@
     "on_hit": "Até o início do seu próximo turno, o alvo sofre +1 Difficulty em todas as rolagens de ataque que não tenham você como alvo.",
     "effect": "Quick Action: Você pode fincar a Shield-Lance no chão para criar uma barreira de Cobertura Pesada (Hard Cover) de 2 espaços de largura no mapa até ser recolhida.",
     "description": "Uma barreira tática de liga pesada equipada com ponta perfurante. Projetada para prender a atenção de alvos hostis ou ser fincada no solo como fortificação de emergência."
+  },
+  {
+    "id": "mw_nis_thermal_injection_needle",
+    "name": "Thermal Injection Needle",
+    "source": "NIS",
+    "license": "Icarus",
+    "license_level": 1,
+    "type": "Rifle",
+    "mount": "Main",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "heat_cost": 1,
+    "on_hit": "O alvo deve realizar um Engineering Save. Em caso de falha, se realizar qualquer movimento voluntário no próximo turno dele, sofre 1 de Heat adicional.",
+    "description": "Dispara agulhas incandescentes que reagem termicamente com o movimento do chassi inimigo."
+  },
+  {
+    "id": "mw_nis_overheat_beam",
+    "name": "Overheat Beam",
+    "source": "NIS",
+    "license": "Icarus",
+    "license_level": 3,
+    "type": "Cannon",
+    "mount": "Heavy",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": 8
+      }
+    ],
+    "heat_cost": 3,
+    "on_attack": "Se o feixe atingir 2 ou mais alvos na mesma linha, todos os alvos afetados sofrem 3 de Burn.",
+    "description": "Projetor pesado de feixe sustentado. A intensidade da ressonância incandece as superfícies ao atravessar múltiplos alvos."
   }
 ]

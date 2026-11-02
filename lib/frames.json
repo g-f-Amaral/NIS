@@ -204,5 +204,73 @@
     "image_url": "https://images4.imgbox.com/22/79/XKhzJtMg_o.png",
     "license": "Thanatos",
     "license_id": "mf_nis_thanatos"
+  },
+  {
+    "id": "mf_nis_icarus",
+    "source": "NIS",
+    "name": "Icarus",
+    "mechtype": [
+      "Controller",
+      "Support"
+    ],
+    "y_pos": 0,
+    "license_level": 2,
+    "description": "<p>Plataforma de manipulação vetorial e controle aéreo sustentado. O Icarus projeta membranas somáticas incandescentes que convertem estresse térmico em sustentação, permitindo dominar o espaço aéreo enquanto canaliza exaustões superaquecidas sobre as formações inimigas.</p>",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Modo Berserk",
+        "description": "Sistema base do Link Biossímbrico. O frame ignora travas de segurança: a tabela de aquecimento não é rolada, as tabelas de Structure e Stress são ignoradas e o Exposed por superaquecimento fica suspenso. Heat acima do Heat Cap continua custando Stress. Troca Structure por Heat: sempre que perderia 1 de Structure, sofre 3 de Heat e restaura o HP. O primeiro Overcharge de cada turno não gera Heat. Ganha +1 Speed. O primeiro ataque que acertar causa +1d6 de dano bônus. Uma vez por turno, pode aplicar +1 Accuracy a um ataque ou save.",
+        "actions": [
+          {
+            "name": "Ativar / Encerrar Berserk",
+            "activation": "Protocol",
+            "detail": "Ativa ou encerra o Modo Berserk antes de qualquer outra ação no turno. Custos contínuos: 3 de Heat no frame e 1 de dano no piloto todo início de turno. Teste de Controle: A partir do 2º turno, exige um Systems Save (dificuldade 8, cumulativo +1/turno). Falha: Mestre assume o turno, move o frame e executa o ataque Melee mais devastador."
+          }
+        ]
+      },
+      {
+        "name": "Thermal Wings",
+        "description": "Para realizar movimento voluntário voando (FLYING), o Icarus precisa estar na Danger Zone e sofrer 1 de Heat ao iniciar o movimento. Se o Icarus sofrer Shutdown ou ficar Stunned no ar, cai imediatamente."
+      },
+      {
+        "name": "Thermal Venting",
+        "description": "Uma vez por rodada, quando o Icarus voar diretamente sobre o espaço ocupado por um inimigo, ele expulsa calor residual: o Icarus reduz 2 de Heat da própria barra, e o alvo deve realizar um Engineering Save ou sofrer 2 de Heat e ficar Impaired até o fim do próximo turno dele."
+      },
+      {
+        "name": "Bio-Somatic Link",
+        "description": "O Icarus é imune a efeitos que afetam exclusivamente NHPs e não possui slots de NHP."
+      }
+    ],
+    "core_system": {
+      "name": "Daedalus Supercharge",
+      "description": "O Icarus sobrecarrega as membranas térmicas, permitindo sustentação aérea irrestrita e exaustão contínua sobre a zona de combate.",
+      "active_name": "Ascensão de Ícaro",
+      "active_effect": "<p>Pelo resto da cena:</p><ul><li>Você ganha <b>FLYING</b> permanente sem custos de Heat ou exigência de Danger Zone.</li><li>Inimigos sofrem <b>+1 Difficulty</b> em todos os Saves impostos por suas armas e sistemas.</li><li>No início de cada um dos seus turnos, todos os inimigos na área de <b>Burst 1</b> diretamente abaixo do Icarus sofrem 2 de Heat.</li></ul>",
+      "activation": "Protocol",
+      "use": "Mission"
+    },
+    "image_url": "https://images4.imgbox.com/d8/bf/ScFfSb5L_o.png",
+    "license": "Icarus",
+    "license_id":"mf_nis_icarus"
   }
 ]
