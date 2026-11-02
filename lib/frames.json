@@ -1,0 +1,208 @@
+[
+  {
+    "id": "mf_nis_nemesis",
+    "source": "NIS",
+    "name": "Nemesis",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 14,
+    "license_level": 2,
+    "description": "<p>Primeiro chassi de combate da Numen, a Nemesis foi desenhada em torno de uma ideia simples: o piloto não comanda a máquina, ele a veste. Um sistema nervoso sintético corre ao longo da espinha e do córtex de quem a pilota, e cada reflexo vira movimento antes mesmo de ser pensado.</p><p>Leve, rápida e quase sem blindagem, a Nemesis vive de iniciativa. Quem a pilota aprende cedo que parar é morrer, e que a lança só é perigosa quando o impulso já está em curso.</p>",
+    "mounts": [
+      "Main/Aux",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 8,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": -1,
+      "save": 11,
+      "speed": 6,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Modo Berserk",
+        "description": "Sistema base do Link Biossímbrico. O frame ignora travas de segurança: a tabela de aquecimento não é rolada, as tabelas de Structure e Stress são ignoradas e o Exposed por superaquecimento fica suspenso. Heat acima do Heat Cap continua custando Stress. Troca Structure por Heat: sempre que perderia 1 de Structure, sofre 3 de Heat e restaura o HP. O primeiro Overcharge de cada turno não gera Heat. Ganha +1 Speed. O primeiro ataque que acertar causa +1d6 de dano bônus. Uma vez por turno, pode aplicar +1 Accuracy a um ataque ou save.",
+        "actions": [
+          {
+            "name": "Ativar / Encerrar Berserk",
+            "activation": "Protocol",
+            "detail": "Ativa ou encerra o Modo Berserk antes de qualquer outra ação no turno. Custos contínuos: 3 de Heat no frame e 1 de dano no piloto todo início de turno. Teste de Controle: A partir do 2º turno, exige um Systems Save (dificuldade 8, cumulativo +1/turno). Falha: Mestre assume o turno, move o frame e executa o ataque Melee mais devastador."
+          }
+        ]
+      },
+      {
+        "name": "Bio-Somatic Link",
+        "description": "A Nemesis é imune a efeitos que afetam exclusivamente NHPs e não possui slots de NHP."
+      },
+      {
+        "name": "Acrobatic Leap",
+        "description": "A Nemesis não perde movimento ao ficar ENGAGED durante o próprio movimento e ignora terreno difícil."
+      }
+    ],
+    "core_system": {
+      "name": "Terminal Kinetic Resonance",
+      "description": "A Nemesis sincroniza a massa da arma com os impulsos motores do piloto, permitindo investidas aéreas e perfurações que rasgam blindagens espessas.",
+      "active_name": "Investida Terminal",
+      "active_effect": "<p>Pelo resto da cena:</p><ul><li>Você ganha <b>FLYING</b> durante o seu movimento voluntário.</li><li>Sempre que se mover pelo menos 3 espaços em linha reta antes de um ataque <b>MELEE</b>, o ataque ganha +1 Accuracy e <b>AP</b>.</li></ul>",
+      "activation": "Protocol",
+      "use": "Mission"
+    },
+    "image_url": "https://images4.imgbox.com/d8/bf/ScFfSb5L_o.png",
+    "license": "Nemesis",
+    "license_id": "mf_nis_nemesis"
+  },
+  {
+    "id": "mf_nis_prometheus",
+    "source": "NIS",
+    "name": "Prometheus",
+    "mechtype": [
+      "Artillery",
+      "Striker"
+    ],
+    "y_pos": 0,
+    "license_level": 2,
+    "description": "<p>Plataforma de artilharia pesada desenhada para sustentação biossímbrica prolongada. Suas travas cinéticas fixam o chassi ao solo enquanto o reator neural converte o foco do piloto em disparos energéticos de alta densidade.</p>",
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 8,
+      "edef": 6,
+      "heatcap": 7,
+      "repcap": 5,
+      "sensor_range": 15,
+      "tech_attack": -2,
+      "save": 11,
+      "speed": 4,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Modo Berserk",
+        "description": "Sistema base do Link Biossímbrico. O frame ignora travas de segurança: a tabela de aquecimento não é rolada, as tabelas de Structure e Stress são ignoradas e o Exposed por superaquecimento fica suspenso. Heat acima do Heat Cap continua custando Stress. Troca Structure por Heat: sempre que perderia 1 de Structure, sofre 3 de Heat e restaura o HP. O primeiro Overcharge de cada turno não gera Heat. Ganha +1 Speed. O primeiro ataque que acertar causa +1d6 de dano bônus. Uma vez por turno, pode aplicar +1 Accuracy a um ataque ou save.",
+        "actions": [
+          {
+            "name": "Ativar / Encerrar Berserk",
+            "activation": "Protocol",
+            "detail": "Ativa ou encerra o Modo Berserk antes de qualquer outra ação no turno. Custos contínuos: 3 de Heat no frame e 1 de dano no piloto todo início de turno. Teste de Controle: A partir do 2º turno, exige um Systems Save (dificuldade 8, cumulativo +1/turno). Falha: Mestre assume o turno, move o frame e executa o ataque Melee mais devastador."
+          }
+        ]
+      },
+      {
+        "name": "Bio-Somatic Link",
+        "description": "Imune a efeitos direcionados exclusivamente a NHPs. Não possui slots para NHP."
+      },
+      {
+        "name": "Resonant Anchor",
+        "description": "Quando o Prometheus não realiza movimento voluntário em seu turno, seus ataques com armas do tipo Artillery ou Rifle ganham +1 Accuracy."
+      }
+    ],
+    "core_system": {
+      "name": "Positron Resonance Cannon",
+      "description": "O Prometheus desengata travas de segurança mecânicas e projeta um canhão de ressonância direta conectado ao seu núcleo biossímbrico.",
+      "active_name": "Positron Resonance Cannon",
+      "active_effect": "<p>Todos os alvos na linha de 15 espaços devem fazer um <b>Agility Save</b>.</p><ul><li><b>Falha:</b> Sofrem 3d6 de Dano de Energia + 2 de Heat, e ficam <b>Prone</b>.</li><li><b>Sucesso:</b> Sofrem metade do dano e não ficam Prone.</li></ul><p><i>Requisito:</i> O Prometheus não pode ter se movido no turno em que ativa este Core System.</p>",
+      "activation": "Full Action",
+      "use": "Mission"
+    },
+    "image_url": "https://images4.imgbox.com/54/51/Aoj1pGE1_o.png",
+    "license": "Prometheus",
+    "license_id": "mf_nis_prometheus"
+  },
+  {
+    "id": "mf_nis_thanatos",
+    "source": "NIS",
+    "name": "Thanatos",
+    "mechtype": [
+      "Defender",
+      "Support"
+    ],
+    "y_pos": 0,
+    "license_level": 2,
+    "description": "<p>Projetado para absorção extrema de estresse e proteção somática, o Thanatos estende o link neural além de sua própria estrutura para amortecer o impacto recebido por chassis aliados.</p>",
+    "mounts": [
+      "Main",
+      "Flex"
+    ],
+    "integrated": [
+      "ms_nis_resonance_shield"
+    ],
+    "stats": {
+      "size": 1,
+      "structure": 4,
+      "stress": 4,
+      "armor": 1,
+      "hp": 12,
+      "evasion": 7,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 4,
+      "sp": 8
+    },
+    "traits": [
+      {
+        "name": "Modo Berserk",
+        "description": "Sistema base do Link Biossímbrico. O frame ignora travas de segurança: a tabela de aquecimento não é rolada, as tabelas de Structure e Stress são ignoradas e o Exposed por superaquecimento fica suspenso. Heat acima do Heat Cap continua custando Stress. Troca Structure por Heat: sempre que perderia 1 de Structure, sofre 3 de Heat e restaura o HP. O primeiro Overcharge de cada turno não gera Heat. Ganha +1 Speed. O primeiro ataque que acertar causa +1d6 de dano bônus. Uma vez por turno, pode aplicar +1 Accuracy a um ataque ou save.",
+        "actions": [
+          {
+            "name": "Ativar / Encerrar Berserk",
+            "activation": "Protocol",
+            "detail": "Ativa ou encerra o Modo Berserk antes de qualquer outra ação no turno. Custos contínuos: 3 de Heat no frame e 1 de dano no piloto todo início de turno. Teste de Controle: A partir do 2º turno, exige um Systems Save (dificuldade 8, cumulativo +1/turno). Falha: Mestre assume o turno, move o frame e executa o ataque Melee mais devastador."
+          }
+        ]
+      },
+      {
+        "name": "Bio-Somatic Link",
+        "description": "Imune a efeitos direcionados exclusivamente a NHPs. Não possui slots para NHP."
+      },
+      {
+        "name": "Martyr's Resonance",
+        "description": "Uma vez por rodada, quando um aliado a até 3 espaços for sofrer dano ou Heat, o Thanatos pode usar uma Reação para redirecionar esse dano/Heat para si mesmo. Se fizer isso enquanto estiver na Danger Zone, a quantidade de dano ou Heat recebida por ele é reduzida pela metade.",
+        "actions": [
+          {
+            "name": "Martyr's Resonance",
+            "activation": "Reaction",
+            "trigger": "Um aliado a até 3 espaços vai sofrer dano ou Heat",
+            "detail": "Redireciona todo o dano ou Heat para o Thanatos (1x por rodada). Se estiver na Danger Zone, reduz esse dano/Heat pela metade."
+          }
+        ]
+      },
+      {
+        "name": "Harmonic Anchor",
+        "description": "Aliados adjacentes ao Thanatos recebem Soft Cover graças ao campo de distorção gerado pela ressonância de sua massa."
+      }
+    ],
+    "core_system": {
+      "name": "Anti Terror Field",
+      "description": "O Thanatos expande o Link Biossímbrico para além do seu próprio cockpit, envolvendo o esquadrão em um campo psiconeural coletivo de proteção.",
+      "active_name": "Anti Terror Field",
+      "active_effect": "<p>O Thanatos projeta uma Aura de Proteção (Burst 2) centrada nele pelo resto da cena.</p><ul><li>Todos os aliados dentro da aura ganham <b>Resistance</b> a todo o dano.</li><li>Sempre que um aliado dentro da aura sofrer um ataque, o Thanatos ganha 1 de Heat (máximo de 3 de Heat acumulados por turno por este efeito).</li></ul>",
+      "activation": "Protocol",
+      "use": "Mission"
+    },
+    "image_url": "https://images4.imgbox.com/22/79/XKhzJtMg_o.png",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos"
+  }
+]

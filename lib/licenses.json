@@ -1,0 +1,20 @@
+[
+  {
+    "id": "mf_nis_nemesis",
+    "name": "Nemesis",
+    "logo_url": "https://raw.githubusercontent.com/g-f-Amaral/Numen-Integrated-Systems/refs/heads/main/nis-logo_novo.svg",
+    "source": "NIS"
+  },
+  {
+    "id": "mf_nis_prometheus",
+    "name": "Prometheus",
+    "logo_url": "https://raw.githubusercontent.com/g-f-Amaral/Numen-Integrated-Systems/refs/heads/main/nis-logo_novo.svg",
+    "source": "NIS"
+  },
+  {
+    "id": "mf_nis_thanatos",
+    "name": "Thanatos",
+    "logo_url": "https://raw.githubusercontent.com/g-f-Amaral/Numen-Integrated-Systems/refs/heads/main/nis-logo_novo.svg",
+    "source": "NIS"
+  }
+]

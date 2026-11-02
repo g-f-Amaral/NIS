@@ -1,0 +1,181 @@
+[
+  {
+    "id": "ms_nis_sync_counter",
+    "name": "Sync-Counter",
+    "type": "System",
+    "sp": 1,
+    "tags": [],
+    "source": "NIS",
+    "license": "Nemesis",
+    "license_id": "mf_nis_nemesis",
+    "license_level": 1,
+    "effect": "Otimização de reflexos para retaliação imediata.",
+    "actions": [
+      {
+        "name": "Sync-Counter",
+        "activation": "Free",
+        "detail": "Quando um inimigo errar um ataque Melee contra a Nemesis devido à Evasion, ela pode realizar um ataque com uma arma Auxiliary Melee contra aquele atacante. 1x por rodada."
+      }
+    ],
+    "description": "Sub-rotinas de contra-ataque integradas ao córtex que respondem a investidas fracassadas antes mesmo do piloto processar o movimento visualmente."
+  },
+  {
+    "id": "ms_nis_neural_reflex_accelerators",
+    "name": "Neural Reflex Accelerators",
+    "type": "System",
+    "sp": 1,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "source": "NIS",
+    "license": "Nemesis",
+    "license_id": "mf_nis_nemesis",
+    "license_level": 3,
+    "effect": "Aceleradores neurais que distorcem a percepção de tempo do piloto para evasão extrema.",
+    "actions": [
+      {
+        "name": "Neural Reflex Accelerators",
+        "activation": "Reaction",
+        "trigger": "A Nemesis é alvo de um ataque",
+        "detail": "Quando a Nemesis for alvo de um ataque, você pode aumentar seu Heat em +1 para forçar o atacante a rolar com +1 Difficulty."
+      }
+    ],
+    "description": "Um pico forçado de adrenalina biossintética que faz o mundo ao redor parecer se mover em câmera lenta por uma fração de segundo."
+  },
+  {
+    "id": "ms_nis_resonance_marking_array",
+    "name": "Resonance Marking Array",
+    "type": "System",
+    "sp": 1,
+    "tags": [],
+    "source": "NIS",
+    "license": "Prometheus",
+    "license_id": "mf_nis_prometheus",
+    "license_level": 1,
+    "effect": "Matriz de marcação sustentada que não é consumida pelo próprio usuário.",
+    "actions": [
+      {
+        "name": "Resonance Mark",
+        "activation": "Quick Tech",
+        "detail": "Aplica Lock On ao alvo dentro do Sensor Range. O Lock On aplicado por você não é consumido pelos seus próprios ataques: enquanto durar, seus ataques à distância contra o alvo ganham +1 Accuracy. Apenas um alvo marcado por vez; dura 3 turnos."
+      }
+    ],
+    "description": "Um farol de frequência quântica que se atraca à assinatura térmica do alvo, iluminando-o na interface do piloto como uma anomalia gritante."
+  },
+  {
+    "id": "ms_nis_somatic_overdrive_harness",
+    "name": "Somatic Overdrive Harness",
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "source": "NIS",
+    "license": "Prometheus",
+    "license_id": "mf_nis_prometheus",
+    "license_level": 3,
+    "effect": "Condutores diretos entre o reator do frame e a espinha do piloto.",
+    "actions": [
+      {
+        "name": "Overdrive",
+        "activation": "Quick",
+        "detail": "Você sofre 2 de Heat e ganha +1 Accuracy em todos os ataques até o fim do seu turno."
+      }
+    ],
+    "description": "Removendo momentaneamente os filtros de temperatura do traje biossímbrico, o piloto sente a fornalha do mecha em sua própria pele, convertendo dor em foco absoluto."
+  },
+  {
+    "id": "ms_nis_resonance_shield",
+    "name": "Resonance Shield",
+    "type": "Shield",
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "NIS",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos",
+    "license_level": 1,
+    "effect": "Sistema integrado do frame Thanatos para proteção de aliados próximos.",
+    "actions": [
+      {
+        "name": "Projeção de Escudo",
+        "activation": "Reaction",
+        "detail": "Você reage a um ataque contra um aliado a até 3 espaços. Concede +1 Difficulty a esse ataque. Uso limitado a 1x por rodada. Custa 1 de Heat ao próprio Thanatos."
+      }
+    ],
+    "description": "Uma projeção de força cinética bruta gerada pelo link somático, capaz de desviar a trajetória de projéteis em pleno voo."
+  },
+  {
+    "id": "ms_nis_at_field",
+    "name": "A.T. Field",
+    "type": "Shield",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "source": "NIS",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos",
+    "license_level": 1,
+    "effect": "Campo de terror absoluto, externalizado como uma barreira física de energia.",
+    "actions": [
+      {
+        "name": "A.T. Field Activation",
+        "activation": "Protocol",
+        "detail": "Enquanto estiver ativo, você ganha Soft Cover. No início de cada um dos seus turnos com o campo ativo, sofre 1 de Heat. O campo termina com um novo Protocolo, ou se o mecha ficar Stunned ou em Shut Down."
+      }
+    ],
+    "description": "As barreiras psicológicas do piloto são amplificadas e projetadas como defletores particulados ao redor do mecha."
+  },
+  {
+    "id": "ms_nis_somatic_dampening_tether",
+    "name": "Somatic Dampening Tether",
+    "type": "System",
+    "sp": 1,
+    "tags": [],
+    "source": "NIS",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos",
+    "license_level": 1,
+    "effect": "Amortecedor biossímbrico compartilhado via cabo ou transmissão de curto alcance.",
+    "actions": [
+      {
+        "name": "Conexão Amortecedora",
+        "activation": "Quick",
+        "detail": "Pode ser ativado como Quick Action ou Protocolo. Conecta-se a um aliado dentro do Sensor Range. Por 3 turnos, sempre que o aliado realizar um Overcharge, ele ganha +1 Accuracy naquele ataque e o Thanatos absorve o custo de Heat gerado."
+      }
+    ],
+    "description": "Permite que o Thanatos puxe o estresse do núcleo do reator de um mecha aliado diretamente para suas próprias ventoinhas."
+  },
+  {
+    "id": "ms_nis_psychic_feedback_emitter",
+    "name": "Psychic Feedback Emitter",
+    "type": "System",
+    "sp": 3,
+    "tags": [],
+    "source": "NIS",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos",
+    "license_level": 3,
+    "effect": "Arma de área que converte estresse térmico em sobrecarga neurológica contra o inimigo.",
+    "actions": [
+      {
+        "name": "Feedback Loop",
+        "activation": "Full",
+        "detail": "Burst 2 centrado no Thanatos. Todos os inimigos na área sofrem Dano de Energia igual ao Heat atual do Thanatos (Máximo de 5) e devem passar em um Systems Save ou ficar Impaired até o fim do próximo turno deles."
+      }
+    ],
+    "description": "Libera a dor acumulada e o feedback sensorial do piloto em uma onda de choque dissonante que paralisa os sensores inimigos."
+  }
+]

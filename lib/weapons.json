@@ -1,0 +1,253 @@
+[
+  {
+    "id": "mw_nis_dual_hf_prog_knives",
+    "name": "Dual HF Prog-Knives",
+    "mount": "Auxiliary",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      },
+      {
+        "type": "Thrown",
+        "val": 3
+      }
+    ],
+    "tags": [],
+    "source": "NIS",
+    "license": "Nemesis",
+    "license_id": "mf_nis_nemesis",
+    "license_level": 1,
+    "on_attack": "Se o ataque for arremessado (Thrown), ele ganha a tag AP. As lâminas podem ser recolhidas sem custo ao passar pelo espaço do alvo.",
+    "description": "Lâminas progressivas de alta frequência. Quando arremessadas em alta rotação sincronizada, perfuram a blindagem antes de se cravarem no alvo."
+  },
+  {
+    "id": "mw_nis_resonance_lance",
+    "name": "Resonance Lance",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_overkill"
+      }
+    ],
+    "source": "NIS",
+    "license": "Nemesis",
+    "license_id": "mf_nis_nemesis",
+    "license_level": 2,
+    "on_hit": "Se você se moveu pelo menos 3 espaços em linha reta antes deste ataque, o alvo deve passar em um Agility Save ou ser empurrado 2 espaços (Knockback 2) e ficar Slowed até o fim do próximo turno dele.",
+    "description": "Uma lança desenhada para canalizar o momentum cinético do próprio chassi, convertendo a velocidade de investida em uma onda de choque que desestabiliza a massa do mecha inimigo."
+  },
+  {
+    "id": "mw_nis_twin_helix_glaive",
+    "name": "Twin-Helix Glaive",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_ap"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "source": "NIS",
+    "license": "Nemesis",
+    "license_id": "mf_nis_nemesis",
+    "license_level": 3,
+    "on_hit": "Você pode sofrer +1 de Heat para realizar imediatamente um segundo ataque de lâmina contra um alvo diferente dentro do Threat. Este segundo ataque não recebe dano bônus.",
+    "description": "Uma glaive pesada de duas pontas articuladas por condutores neurais. O impulso somático permite ao piloto desferir um arco duplo de retaliação contínua."
+  },
+  {
+    "id": "mw_nis_prog_pallet_rifle",
+    "name": "Prog-Pallet Rifle",
+    "mount": "Auxiliary",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_reliable",
+        "val": 1
+      }
+    ],
+    "source": "NIS",
+    "license": "Prometheus",
+    "license_id": "mf_nis_prometheus",
+    "license_level": 1,
+    "on_hit": "O alvo deve passar em um Agility Save ou ficar Slowed até o fim do próximo turno dele devido ao fogo de supressão cinético.",
+    "description": "Rifle auxiliar que dispara munição cinética condensada. A rajada de alta frequência força o chassi inimigo a compensar o impacto, atrasando seu avanço."
+  },
+  {
+    "id": "mw_nis_heavy_positron_rifle",
+    "name": "Heavy Positron Rifle",
+    "mount": "Heavy",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_target",
+        "val": 2
+      },
+      {
+        "id": "tg_reliable",
+        "val": 2
+      },
+      {
+        "id": "tg_inaccurate"
+      }
+    ],
+    "source": "NIS",
+    "license": "Prometheus",
+    "license_id": "mf_nis_prometheus",
+    "license_level": 2,
+    "on_hit": "Se o alvo estiver marcado pela Resonance Marking Array, todos os inimigos adjacentes ao alvo também sofrem 2 de Heat imediatamente.",
+    "description": "Um canhão de pósitrons pesado. Ao encontrar a assinatura quântica do farol de marcação, o feixe gera uma arca de dispersão térmica que sobrecarrega unidades vizinhas."
+  },
+  {
+    "id": "mw_nis_resonance_burster",
+    "name": "Resonance Burster",
+    "mount": "Main",
+    "type": "CQB",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ],
+    "source": "NIS",
+    "license": "Prometheus",
+    "license_id": "mf_nis_prometheus",
+    "license_level": 3,
+    "on_hit": "Empurra o alvo 2 espaços para trás (Knockback 2). Se o alvo colidir com um obstáculo ou outro mecha durante este empurrão, ele sofre 2 de Dano Cinético adicional.",
+    "description": "Arma de reação rápida para zonas de engajamento próximo. O sopro de energia repele agressores com força devastadora à custa de estresse térmico no próprio frame."
+  },
+  {
+    "id": "mw_nis_repulsion_hammer",
+    "name": "Repulsion Hammer",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_knockback",
+        "val": 2
+      }
+    ],
+    "source": "NIS",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos",
+    "license_level": 2,
+    "on_hit": "O alvo é empurrado 2 espaços (Knockback 2) e deve realizar um Hull Save. Se falhar, fica Slowed até o fim do próximo turno dele.",
+    "description": "Martelo pneumático pesado com repulsores pontuais. Além de arremessar o inimigo para longe dos aliados, o impacto desarranja as articulações da máquina atingida."
+  },
+  {
+    "id": "mw_nis_type_1_shield_lance",
+    "name": "Type 1 Shield-Lance",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [],
+    "source": "NIS",
+    "license": "Thanatos",
+    "license_id": "mf_nis_thanatos",
+    "license_level": 3,
+    "on_hit": "Até o início do seu próximo turno, o alvo sofre +1 Difficulty em todas as rolagens de ataque que não tenham você como alvo.",
+    "effect": "Quick Action: Você pode fincar a Shield-Lance no chão para criar uma barreira de Cobertura Pesada (Hard Cover) de 2 espaços de largura no mapa até ser recolhida.",
+    "description": "Uma barreira tática de liga pesada equipada com ponta perfurante. Projetada para prender a atenção de alvos hostis ou ser fincada no solo como fortificação de emergência."
+  }
+]
