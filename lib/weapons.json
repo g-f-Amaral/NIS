@@ -270,6 +270,15 @@
         "val": 10
       }
     ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      },
+      {
+        "id": "tg_smart"
+      }
+    ],
     "heat_cost": 1,
     "on_hit": "O alvo deve realizar um Engineering Save. Em caso de falha, se realizar qualquer movimento voluntário no próximo turno dele, sofre 1 de Heat adicional.",
     "description": "Dispara agulhas incandescentes que reagem termicamente com o movimento do chassi inimigo."
@@ -292,6 +301,15 @@
       {
         "type": "Line",
         "val": 8
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 3
+      },
+      {
+        "id": "tg_ap"
       }
     ],
     "heat_cost": 3,

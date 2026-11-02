@@ -6,7 +6,7 @@
     "mechtype": [
       "Striker"
     ],
-    "y_pos": 2,
+    "y_pos": 18,
     "license_level": 2,
     "description": "<p>Primeiro chassi de combate da Numen, a Nemesis foi desenhada em torno de uma ideia simples: o piloto não comanda a máquina, ele a veste. Um sistema nervoso sintético corre ao longo da espinha e do córtex de quem a pilota, e cada reflexo vira movimento antes mesmo de ser pensado.</p><p>Leve, rápida e quase sem blindagem, a Nemesis vive de iniciativa. Quem a pilota aprende cedo que parar é morrer, e que a lança só é perigosa quando o impulso já está em curso.</p>",
     "mounts": [
@@ -70,7 +70,7 @@
       "Artillery",
       "Striker"
     ],
-    "y_pos": 8,
+    "y_pos": 11,
     "license_level": 2,
     "description": "<p>Plataforma de artilharia pesada desenhada para sustentação biossímbrica prolongada. Suas travas cinéticas fixam o chassi ao solo enquanto o reator neural converte o foco do piloto em disparos energéticos de alta densidade.</p>",
     "mounts": [
@@ -213,7 +213,7 @@
       "Controller",
       "Support"
     ],
-    "y_pos": 5,
+    "y_pos": 6,
     "license_level": 2,
     "description": "<p>Plataforma de manipulação vetorial e controle aéreo sustentado. O Icarus projeta membranas somáticas incandescentes que convertem estresse térmico em sustentação, permitindo dominar o espaço aéreo enquanto canaliza exaustões superaquecidas sobre as formações inimigas.</p>",
     "mounts": [
