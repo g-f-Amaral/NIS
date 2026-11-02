@@ -217,8 +217,8 @@
     "license_level": 2,
     "description": "<p>Plataforma de manipulação vetorial e controle aéreo sustentado. O Icarus projeta membranas somáticas incandescentes que convertem estresse térmico em sustentação, permitindo dominar o espaço aéreo enquanto canaliza exaustões superaquecidas sobre as formações inimigas.</p>",
     "mounts": [
-      "Main",
-      "Flex"
+      "Main/Aux",
+      "Heavy"
     ],
     "stats": {
       "size": 1,

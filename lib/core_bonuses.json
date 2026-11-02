@@ -1,0 +1,65 @@
+[
+  {
+    "id": "cb_nis_neural_weave",
+    "name": "Neural Weave",
+    "source": "NIS",
+    "effect": "You gain +1 Accuracy on all Hull OR Engineering checks and saves (choose when taking this core bonus).",
+    "description": "Synthetic neural bundles interwoven directly through the armor plating create a seamless somatic bridge between pilot reflexes and chassis actuation."
+  },
+  {
+    "id": "cb_nis_heat_converter",
+    "name": "Heat Converter",
+    "source": "NIS",
+    "effect": "You gain +2 Heat Cap. Additionally, 1/round, whenever you gain Heat from any source, your next movement action gains +1 bonus movement speed.",
+    "description": "Custom venting channels harvest excess thermal output from the core, repurposing raw heat directly into kinetic thruster acceleration.",
+    "bonuses": [
+      {
+        "id": "heatcap",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "cb_nis_muscle_augmentation",
+    "name": "Muscle Augmentation",
+    "source": "NIS",
+    "effect": "You gain +1 Accuracy on all Ram and Grapple checks and saves. All your Melee attacks gain the [HEAT (SELF) 1] tag and deal +1 bonus Burn on hit.",
+    "description": "High-density synthetic muscle fibers line the frame's limbs, granting crushing physical grip strength that burns incandescent under load.",
+    "synergies": [
+      {
+        "locations": ["ram", "grapple"],
+        "detail": "Gain +1 Accuracy on all Ram and Grapple checks and saves."
+      }
+    ]
+  },
+  {
+    "id": "cb_nis_overdrive_threshold",
+    "name": "Overdrive Threshold",
+    "source": "NIS",
+    "effect": "While in the Danger Zone, at the start of your turn choose to gain either +1 Speed OR +1 Evasion until the start of your next turn.",
+    "description": "Neural limiters relax as internal temperatures climb, unlocking predatory synthetic reflexes that push the chassis beyond safe operating parameters."
+  },
+  {
+    "id": "cb_nis_resonant_core",
+    "name": "Resonant Core",
+    "source": "NIS",
+    "effect": "1/mission, as a Reaction when taking Structure or Stress damage, you can instantly cool all Heat and restore HP equal to your Heat Cap. However, your mech loses its Quick Action on your next turn due to system purge shock.",
+    "actions": [
+      {
+        "name": "Resonant Core",
+        "activation": "Reaction",
+        "frequency": "1/mission",
+        "trigger": "You take Structure or Stress damage.",
+        "detail": "Instantly cool all Heat and restore HP equal to your Heat Cap. Lose your Quick Action on your next turn."
+      }
+    ],
+    "description": "In catastrophic moments, the NIS core forces an emergency thermal purge, utilizing rapid heat dissipation to instantly knit synthetic tissues at the cost of temporary lockup."
+  },
+  {
+    "id": "cb_nis_thermal_venting",
+    "name": "Thermal Venting",
+    "source": "NIS",
+    "effect": "Whenever you Boost, you vent superheated exhaust. You cool 1 Heat at the end of the Boost, and can cause 1 Heat to an adjacent enemy.",
+    "description": "Dorsal thermal extruders force directional exhaust outward during rapid acceleration, scouring nearby terrain with superheated plasma."
+  }
+]

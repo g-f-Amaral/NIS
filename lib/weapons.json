@@ -277,6 +277,9 @@
       },
       {
         "id": "tg_smart"
+      },
+      {
+        "id": "tg_inaccurate"
       }
     ],
     "heat_cost": 1,
@@ -310,6 +313,9 @@
       },
       {
         "id": "tg_ap"
+      },
+      {
+        "id": "tg_ordnance"
       }
     ],
     "heat_cost": 3,

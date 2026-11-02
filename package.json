@@ -8,6 +8,7 @@
   "frames": "frames.json",
   "systems": "systems.json",
   "weapons": "weapons.json",
+  "core_bonuses": "core_bonuses.json",
   "main": "index.js",
   "scripts": {
     "build": "node ./scripts/build.js",
