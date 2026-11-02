@@ -1,6 +1,7 @@
 {
   "name": "Numen Integrated Systems",
   "id": "nis_homebrew",
+  "source": "NIS",
   "version": "1.3.0",
   "description": "Pacote de conteúdo homebrew da fabricante Numen Integrated Systems para Lancer RPG.",
   "manufacturers": "manufacturers.json",
