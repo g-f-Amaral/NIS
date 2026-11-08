@@ -2,7 +2,7 @@
   {
     "id": "ADF",
     "name": "Autarch Defense Forces",
-    "logo_url": "",
+    "logo_url": "https://raw.githubusercontent.com/g-f-Amaral/NIS/eea8517ce46ab605dc1dd4cea9415ae3ccff47e2/ADF/images/chiron_losango_fraturado_branco_transparente.svg",
     "light": "#F5F7FA",
     "dark": "#F5F7FA",
     "description": "<p>Uma corporação militar de vanguarda focada em chassi de alta mobilidade e vetorização biomecânica. A ADF não produz frotas em massa; seus mechas são obras-primas técnicas projetadas para operar no limite teórico.</p>",
