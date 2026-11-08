@@ -20,6 +20,7 @@
       "speed": 5,
       "sp": 6
     },
+    "img_url":"https://raw.githubusercontent.com/g-f-Amaral/NIS/refs/heads/master/ADF/images/Chiron.png",
     "mounts": [
       "Heavy",
       "Flex"
