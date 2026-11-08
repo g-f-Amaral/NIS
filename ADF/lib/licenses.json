@@ -1,0 +1,49 @@
+[
+  {
+    "id": "lic_adf_chiron",
+    "name": "ADF Chiron",
+    "source": "ADF",
+    "curr_level": 0,
+    "licenses": [
+      {
+        "level": 1,
+        "items": [
+          {
+            "id": "mw_adf_gungnir_type_2",
+            "type": "Weapon"
+          },
+          {
+            "id": "ms_adf_kinetic_tether_harness",
+            "type": "System"
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "items": [
+          {
+            "id": "mf_adf_chiron",
+            "type": "Frame"
+          },
+          {
+            "id": "mw_adf_chimera",
+            "type": "Weapon"
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "items": [
+          {
+            "id": "ms_adf_overpressure_valve",
+            "type": "System"
+          },
+          {
+            "id": "ms_adf_vector_flash_engine",
+            "type": "System"
+          }
+        ]
+      }
+    ]
+  }
+]

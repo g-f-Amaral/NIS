@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ms_adf_kinetic_tether_harness",
+    "name": "Kinetic Tether Harness",
+    "source": "ADF",
+    "license": "Chiron",
+    "license_level": 1,
+    "type": "Tech",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Tether Vector Pull",
+        "activation": "Quick Tech",
+        "detail": "Se a Aegis Pincer Lance estiver fincada em um inimigo ou no terreno a até Range 6, puxa o seu próprio mecha em linha reta até um espaço livre adjacente à lança e a recolhe automaticamente."
+      }
+    ],
+    "description": "Sistema de guincho cinético de alta densidade acoplado ao chassi para tração vetorial rápida."
+  },
+  {
+    "id": "ms_adf_overpressure_valve",
+    "name": "Overpressure Valve",
+    "source": "ADF",
+    "license": "Chiron",
+    "license_level": 3,
+    "type": "System",
+    "sp": 2,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Overpressure Vent",
+        "activation": "Reaction",
+        "trigger": "Você sofre Dano de Estrutura (Structure Damage).",
+        "detail": "Emite uma rajada direcional de vapor. Você ganha Invisibility até o final do seu próximo turno e desengaja de todos os alvos adjacentes."
+      }
+    ],
+    "description": "Válvulas de alívio emergencial que expelem estresse térmico para garantir fuga e reposicionamento instantâneo."
+  },
+  {
+    "id": "ms_adf_vector_flash_engine",
+    "name": "Vector Flash Engine",
+    "source": "ADF",
+    "license": "Chiron",
+    "license_level": 3,
+    "type": "System",
+    "sp": 3,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Vector Flash Jump",
+        "activation": "Quick",
+        "detail": "Realize um salto de até 4 espaços em qualquer direção. Se passar pelo espaço de um inimigo no qual sua lança está fincada, você pode recolher a lança no caminho e realizar um ataque corpo a corpo imediato com a Chimera contra ele como Free Action."
+      }
+    ],
+    "description": "Impulsionadores dorsais de curto alcance para reposicionamento tridimensional hiper-rápido."
+  }
+]

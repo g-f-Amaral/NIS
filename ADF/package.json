@@ -1,0 +1,25 @@
+{
+  "name": "Autarch Defense Forces",
+  "id": "ADF",
+  "version": "1.0.0",
+  "author": "Guilherme Amaral",
+  "description": "Pacote de expansão standalone para Lancer RPG apresentando a fabricante Autarch Defense Forces (ADF). Inclui o chassi supreme Chiron (Size 1 Striker), a arma pneumática de uso duplo Aegis Pincer Lance, a espada de Stance Master's Estoc e sistemas biomecânicos de alta vetorização.",
+  "website": "https://github.com/g-f-Amaral/Autarch-Defense-Forces",
+  "image_url": "",
+  "main": "index.js",
+  "manufacturers": [
+    "manufacturers.json"
+  ],
+  "frames": [
+    "frames.json"
+  ],
+  "weapons": [
+    "weapons.json"
+  ],
+  "systems": [
+    "systems.json"
+  ],
+  "licenses": [
+    "licenses.json"
+  ]
+}

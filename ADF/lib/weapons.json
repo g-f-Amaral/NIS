@@ -1,0 +1,86 @@
+[
+{
+    "id": "mw_adf_gungnir_type_2",
+    "name": "Gungnir Type 2",
+    "source": "ADF",
+    "license": "Chiron",
+    "license_level": 1,
+    "type": "Rifle",
+    "mount": "Heavy",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      },
+      {
+        "type": "Threat",
+        "val": 2
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 4
+      },
+      {
+        "id": "tg_thrown",
+        "val": 5
+      }
+    ],
+    "on_hit": "Modo Arremesso (Thrown 5): Ao arremessar a lança, no acerto o alvo deve realizar um Hull Save. Em caso de falha, fica Impaired e a lança fica impalada no seu chassi. O mecha fica desarmado desta lança até recolhê-la.",
+    "description": "Uma lança pneumática multifuncional. Possui um carregador de 4 disparos a longo alcance (Range 10) que causam dano cinético concentrado. Como alternativa de engajamento, a lança inteira pode ser arremessada (Thrown 5); nesse caso, ela finca no alvo até ser recolhida."
+  },
+  {
+    "id": "mw_adf_chimera",
+    "name": "Chimera",
+    "source": "ADF",
+    "license": "Chiron",
+    "license_level": 2,
+    "type": "Melee",
+    "mount": "Main",
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_protocol"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "description": "Uma espada de esgrima pesada projetada para alternância fluida de Stances como um Protocol:",
+    "profiles": [
+      {
+        "name": "Dueller Stance",
+        "description": "Ganha a tag [ACCURATE]. Enquanto nesta postura, o primeiro ataque corpo a corpo realizado contra você a cada rodada recebe +1 Difficulty. Se o ataque errar, seu próximo ataque contra o atacante causa +1d3 de Dano Bônus.",
+        "tags": [{ "id": "tg_accurate" }]
+      },
+      {
+        "name": "Heavy Breaker Stance",
+        "description": "Ganha a tag [ARMOR-PIERCING (AP)] e [INACCURATE 1]. Seus ataques ignoram blindagem. Se o alvo tiver 50% ou menos de HP/Estrutura restante, cause +1d3 de Dano Bônus.",
+        "tags": [{ "id": "tg_ap" }, { "id": "tg_inaccurate", "val": 1 }]
+      },
+      {
+        "name": "Tempest Stance",
+        "description": "Ganha a tag [REACTION]. 1/Rodada, quando um ataque corpo a corpo contra você errar o alvo, você pode gastar uma Reação para desferir um contra-ataque rápido causando 3 de Dano Perfurante direto.",
+        "tags": [{ "id": "tg_reaction" }]
+      }
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "id": "mf_adf_chiron",
+    "name": "Chiron",
+    "source": "ADF",
+    "mechtype": ["Striker"],
+    "license_level": 2,
+    "description": "O Chiron é o chassi supremo da Autarch Defense Forces. Projetado como um apex predator de Size 1, ele não possui limitadores neurais de segurança: quanto mais sua carcaça é despedaçada em combate, mais o reator biossímbrico converte estresse estrutural em velocidade bruta e força de impacto.",
+    "stats": {
+      "size": 0.5,
+      "hp": 8,
+      "armor": 1,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 0,
+      "save": 11,
+      "speed": 5,
+      "sp": 6
+    },
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
+    "traits": [
+      {
+        "name": "Relentless Momentum",
+        "description": "Para cada ponto de Structure Damage sofrido durante a cena, o Chiron ganha +1 Speed permanente e seus ataques causam +1 de Dano Bônus."
+      },
+      {
+        "name": "Critical Overdrive",
+        "description": "Enquanto o Chiron estiver com exatamente 1 de Structure restante, ele ganha +1 Accuracy em todas as rolagens de ataque e ignora penalidades de terreno difícil."
+      }
+    ],
+    "core_system": {
+      "name": "Apex Overclock",
+      "active_name": "Superiority",
+      "activation": "Protocol",
+      "use": "Mission",
+      "description": "Durante 3 turnos, o Chiron entra em perfeita sincronia com seus sistemas. Todas as suas armas ganham a tag [ACCURATE]. Além disso, você pode arremessar qualquer arma corpo a corpo com a tag [THROWN] a até Range 8 sem penalidade e recuperá-la como Free Action."
+    }
+  }
+]
