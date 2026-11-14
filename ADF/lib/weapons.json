@@ -1,46 +1,82 @@
 [
-{
+  {
     "id": "mw_adf_gungnir_type_2",
     "name": "Gungnir Type 2",
     "source": "ADF",
     "license": "Chiron",
+    "license_id": "mf_adf_chiron",
     "license_level": 1,
     "type": "Rifle",
     "mount": "Heavy",
-    "damage": [
+    "description": "O conjunto pneumático dispara através da haste. A ponta da Gungnir foi feita para suportar a tração do guincho mesmo depois de atravessar blindagem.",
+    "effect": "Você começa cada cena no modo escolhido. Uma vez por turno, você pode alternar entre os modos como Protocol. Os dois modos compartilham o mesmo mount e o mesmo estado de destruição. Enquanto a lança estiver arremessada, nenhum modo pode ser usado e você não pode trocar de modo. Ao recolhê-la, ela volta em modo Lança.",
+    "actions": [
       {
-        "type": "Kinetic",
-        "val": "1d6+2"
+        "name": "Alternar modo da Gungnir",
+        "activation": "Protocol",
+        "detail": "Você começa cada cena no modo escolhido. Uma vez por turno, você pode alternar entre os modos como Protocol. Os dois modos compartilham o mesmo mount e o mesmo estado de destruição. Enquanto a lança estiver arremessada, nenhum modo pode ser usado e você não pode trocar de modo. Ao recolhê-la, ela volta em modo Lança."
       }
     ],
-    "range": [
+    "profiles": [
       {
-        "type": "Range",
-        "val": 10
+        "name": "Modo Rifle",
+        "type": "Rifle",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_loading"
+          },
+          {
+            "id": "tg_ap"
+          },
+          {
+            "id": "tg_overkill"
+          }
+        ],
+        "effect": "Este perfil conta como Rifle. Loading se aplica apenas ao Modo Rifle. Trocar de modo, arremessar ou recolher a Gungnir não recarrega o Rifle. Você pode recarregar o Rifle com Stabilize mesmo com o Modo Lança ativo."
       },
       {
-        "type": "Threat",
-        "val": 2
+        "name": "Modo Lança",
+        "type": "Melee",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Threat",
+            "val": 2
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_thrown",
+            "val": 5
+          }
+        ],
+        "effect": "Este perfil conta como Melee. Ao acertar um arremesso, a lança fica fincada no alvo e se move com ele. O alvo faz um Hull Save. Se falhar, fica Impaired até o fim do próximo turno dele. Ao errar, a lança cai em um espaço livre adjacente ao alvo escolhido por você. Se o alvo for destruído, ela cai em um dos espaços que ele ocupava, à sua escolha. Você também pode gastar um ataque com este perfil para fincar a lança, sem rolagem, em um espaço livre dentro do alcance de Thrown e em linha de visão. Se estiver adjacente à lança, ou se ela estiver presa a um alvo adjacente a você, pode recolhê-la como Free Action."
       }
-    ],
-    "tags": [
-      {
-        "id": "tg_limited",
-        "val": 4
-      },
-      {
-        "id": "tg_thrown",
-        "val": 5
-      }
-    ],
-    "on_hit": "Modo Arremesso (Thrown 5): Ao arremessar a lança, no acerto o alvo deve realizar um Hull Save. Em caso de falha, fica Impaired e a lança fica impalada no seu chassi. O mecha fica desarmado desta lança até recolhê-la.",
-    "description": "Uma lança pneumática multifuncional. Possui um carregador de 4 disparos a longo alcance (Range 10) que causam dano cinético concentrado. Como alternativa de engajamento, a lança inteira pode ser arremessada (Thrown 5); nesse caso, ela finca no alvo até ser recolhida."
+    ]
   },
   {
     "id": "mw_adf_chimera",
-    "name": "Chimera",
+    "name": "Rejoinder",
     "source": "ADF",
     "license": "Chiron",
+    "license_id": "mf_adf_chiron",
     "license_level": 2,
     "type": "Melee",
     "mount": "Main",
@@ -58,28 +94,16 @@
     ],
     "tags": [
       {
-        "id": "tg_protocol"
-      },
-      {
         "id": "tg_unique"
       }
     ],
-    "description": "Uma espada de esgrima pesada projetada para alternância fluida de Stances como um Protocol:",
-    "profiles": [
+    "description": "A lâmina curta e a guarda larga foram feitas para trabalhar à distância de um braço. Quando uma estocada passa pelo ombro do piloto, a ponta da Rejoinder já está voltada para a junta que o adversário expôs.",
+    "actions": [
       {
-        "name": "Dueller Stance",
-        "description": "Ganha a tag [ACCURATE]. Enquanto nesta postura, o primeiro ataque corpo a corpo realizado contra você a cada rodada recebe +1 Difficulty. Se o ataque errar, seu próximo ataque contra o atacante causa +1d3 de Dano Bônus.",
-        "tags": [{ "id": "tg_accurate" }]
-      },
-      {
-        "name": "Heavy Breaker Stance",
-        "description": "Ganha a tag [ARMOR-PIERCING (AP)] e [INACCURATE 1]. Seus ataques ignoram blindagem. Se o alvo tiver 50% ou menos de HP/Estrutura restante, cause +1d3 de Dano Bônus.",
-        "tags": [{ "id": "tg_ap" }, { "id": "tg_inaccurate", "val": 1 }]
-      },
-      {
-        "name": "Tempest Stance",
-        "description": "Ganha a tag [REACTION]. 1/Rodada, quando um ataque corpo a corpo contra você errar o alvo, você pode gastar uma Reação para desferir um contra-ataque rápido causando 3 de Dano Perfurante direto.",
-        "tags": [{ "id": "tg_reaction" }]
+        "name": "Riposta",
+        "activation": "Reaction",
+        "trigger": "Um inimigo dentro do Threat da Rejoinder erra você com um ataque Melee.",
+        "detail": "1/rodada. Ataque o inimigo que disparou a reação com a Rejoinder. Esse ataque não pode causar dano bônus."
       }
     ]
   }

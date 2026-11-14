@@ -1,7 +1,7 @@
 [
   {
-    "id": "lic_adf_chiron",
-    "name": "ADF Chiron",
+    "id": "mf_adf_chiron",
+    "name": "Chiron",
     "source": "ADF",
     "curr_level": 0,
     "licenses": [

@@ -3,44 +3,59 @@
     "id": "mf_adf_chiron",
     "name": "Chiron",
     "source": "ADF",
-    "mechtype": ["Striker"],
+    "license": "Chiron",
+    "license_id": "mf_adf_chiron",
     "license_level": 2,
-    "description": "O Chiron é o chassi supremo da Autarch Defense Forces. Projetado como um apex predator de Size 1, ele não possui limitadores neurais de segurança: quanto mais sua carcaça é despedaçada em combate, mais o reator biossímbrico converte estresse estrutural em velocidade bruta e força de impacto.",
+    "mechtype": [
+      "Striker"
+    ],
+    "description": "O Chiron é uma exoarmadura de assalto projetada para operar com partes da estrutura comprometidas. Quando uma seção da carcaça cede, o controle de movimento redistribui o esforço pelos atuadores que ainda respondem. O piloto pode usar essa margem para sair da linha de tiro ou manter uma arma avariada em serviço pelo tempo de mais um ataque.",
+    "mounts": [
+      "Heavy",
+      "Flex"
+    ],
     "stats": {
       "size": 0.5,
+      "structure": 4,
+      "stress": 4,
       "hp": 8,
       "armor": 1,
       "evasion": 10,
       "edef": 8,
       "heatcap": 6,
-      "repcap": 4,
+      "repcap": 2,
       "sensor_range": 8,
       "tech_attack": 0,
       "save": 11,
       "speed": 5,
       "sp": 6
     },
-    "img_url":"https://raw.githubusercontent.com/g-f-Amaral/NIS/refs/heads/master/ADF/images/Chiron.png",
-    "mounts": [
-      "Heavy",
-      "Flex"
-    ],
+    "image_url": "https://raw.githubusercontent.com/g-f-Amaral/NIS/refs/heads/master/ADF/images/Chiron.png",
     "traits": [
       {
-        "name": "Relentless Momentum",
-        "description": "Para cada ponto de Structure Damage sofrido durante a cena, o Chiron ganha +1 Speed permanente e seus ataques causam +1 de Dano Bônus."
+        "name": "Load Transfer",
+        "description": "Para cada ponto de Structure perdido nesta cena, você ganha +1 Speed até o fim da cena, até +3. Uma vez por turno, no seu turno, depois de se deslocar voluntariamente pelo menos 2 espaços neste turno, você pode aplicar +1 de dano bônus por ponto de Structure perdido nesta cena a um ataque Melee que acertar, até +3 de dano bônus."
       },
       {
         "name": "Critical Overdrive",
         "description": "Enquanto o Chiron estiver com exatamente 1 de Structure restante, ele ganha +1 Accuracy em todas as rolagens de ataque e ignora penalidades de terreno difícil."
+      },
+      {
+        "name": "Breakaway",
+        "description": "1/cena. Imediatamente após resolver o dano de Structure e seus efeitos, se ainda puder se mover, você pode se deslocar até 2 espaços. Esse movimento ignora Engagement e não provoca reações."
+      },
+      {
+        "name": "Keep Alive",
+        "description": "1/cena. Quando um resultado de dano de Structure for destruir uma de suas armas ou sistemas, você pode adiar a destruição desse equipamento até o fim do seu próximo turno. Até lá, o equipamento continua funcionando normalmente. Se a cena terminar antes desse momento, ele é destruído no fim da cena."
       }
     ],
     "core_system": {
       "name": "Apex Overclock",
-      "active_name": "Superiority",
+      "description": "<p>O Apex Overclock sincroniza a mira, os atuadores e um carretel leve integrado à exoarmadura. Durante a Full Integration, o núcleo coordena o arremesso e recolhe a arma enquanto o piloto já acompanha o próximo alvo.</p>",
+      "active_name": "Full Integration",
+      "active_effect": "<p>Durante 3 turnos, o Chiron entra em perfeita sincronia com seus sistemas:</p><ul><li>Todas as suas armas ganham a tag <b>[ACCURATE]</b>.</li><li>Você pode arremessar qualquer arma corpo a corpo com a tag <b>[THROWN]</b> a até Range 8 sem penalidade e recuperá-la como <b>Free Action</b>.</li></ul>",
       "activation": "Protocol",
-      "use": "Mission",
-      "description": "Durante 3 turnos, o Chiron entra em perfeita sincronia com seus sistemas. Todas as suas armas ganham a tag [ACCURATE]. Além disso, você pode arremessar qualquer arma corpo a corpo com a tag [THROWN] a até Range 8 sem penalidade e recuperá-la como Free Action."
+      "use": "Mission"
     }
   }
 ]
